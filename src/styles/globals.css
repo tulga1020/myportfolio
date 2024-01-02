@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.center {
-  @apply justify-between flex items-center;
+@layer components {
+  .center {
+    @apply justify-between flex items-center;
+  }
+  .sectiondiv {
+    @apply w-full md:px-20 md:py-24 max-md:px-4 max-md:py-1;
+  }
 }
