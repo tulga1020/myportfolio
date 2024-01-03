@@ -6,7 +6,7 @@ import { TopMenu } from "./TopMenu";
 import { useTheme } from "next-themes";
 import { ModeIcon } from "./Icons";
 import { Buttons } from "./Buttons";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 export const HeaderLayout = ({ children }) => {
   const { theme, setTheme } = useTheme();
   const [isClickedMenu, setClickedMenu] = useState(false);
@@ -46,11 +46,12 @@ export const HeaderLayout = ({ children }) => {
         <TopMenu />
       )}
       <button
-        className="absolute right-4 top-4 block md:hidden"
+        className="absolute right-4 top-4 block md:hidden "
         onClick={changeIconMenu}
       >
         {isClickedMenu ? <MdOutlineCancel size={24} /> : <FiMenu size={24} />}
       </button>
+
       {children}
     </div>
   );

@@ -11,7 +11,7 @@ export const Pictures = (props) => {
           src={picPath}
           fill
           className={imageClass}
-          //   "cover absolute top-5 left-8 border-8 border-solid border-white max-md:w-[50%] max-md:h-[50%]"
+          //   "`cover absolute top-5 left-8 border-8 border-solid border-white max-md:w-[50%] max-md:h-[50%]`"
         />
       </div>
     </div>

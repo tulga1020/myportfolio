@@ -22,6 +22,8 @@ export const ModeIcon = () => {
     setModeIcon(!modeIcon);
   };
   return (
-    <div onClick={changeModeIcon}>{modeIcon ? <FiSun /> : <FiMoon />}</div>
+    <div className="active:scale-3" onClick={changeModeIcon}>
+      {modeIcon ? <FiSun /> : <FiMoon />}
+    </div>
   );
 };

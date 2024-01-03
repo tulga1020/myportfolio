@@ -4,8 +4,8 @@ import Image from "next/image";
 import { Icons } from "./Icons";
 export const Hero = (heroprops) => {
   return (
-    <div className="w-full ">
-      <div className="flex max-md:flex-col-reverse items-center max-sm:mx-1 justify-between">
+    <div className="w-full">
+      <div className="flex w-full gap-10 max-md:flex-col-reverse  max-sm:mx-1">
         <div className="w-9/12 max-md:w-11/12 flex flex-col gap-10">
           <div className="flex flex-col gap-3">
             <h1 className="text-6xl max-md:text-4xl">Hi I'm Battulga 👋</h1>
@@ -31,14 +31,15 @@ export const Hero = (heroprops) => {
           </div>
           <Icons />
         </div>
-
-        <Pictures
-          imageContainDiv="relative max-h-max md:w-max max-sm:w-11/12 flex items-center"
-          shadowClasses="absolute w-[280px] h-[280px] left-4 top-4 dark:bg-gray-200"
-          imageDivClass="w-[280px] h-[280px] absolute left-2 top-2 bg-gray-300 max-sm:left-1 max-sm:w-full cover"
-          picPath="/profile.jpeg"
-          imageClass="cover absolute border-8 border-solid border-white max-md:w-[50%] max-md:h-[50%]"
-        />
+        <div className="w-3/12 h-fit max-md:w-11/12 max-md:h-[300]">
+          <Pictures
+            imageContainDiv="relative max-sm:w-11/12"
+            shadowClasses="absolute w-[280px] h-[280px] left-4 top-4 dark:bg-gray-200"
+            imageDivClass="absolute w-[280px] h-[280px] left-0 top-0 bg-gray-300 max-sm:left-1"
+            picPath="/profile.jpeg"
+            imageClass="cover absolute border-8 border-solid border-gray"
+          />
+        </div>
       </div>
     </div>
   );
