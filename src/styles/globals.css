@@ -4,7 +4,7 @@
 
 @layer components {
   .center {
-    @apply justify-between flex items-center;
+    @apply flex justify-center items-center;
   }
   .sectiondiv {
     @apply w-full md:px-20 md:py-24 max-md:px-4 max-md:py-1;
